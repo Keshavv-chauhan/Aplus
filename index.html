@@ -5,12 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>APlus Learning - Learn and Grow</title>
-  <meta name="description" content=" Transform your career with expert courses" />
+  <meta name="description" content="Transform your career with expert courses" />
   <link rel="stylesheet" href="./style.css" />
   
 </head>
 
 <body>
+  
   <!-- Navigation -->
   <nav>
     <div class="nav-container">
@@ -21,6 +22,7 @@
         <li><button onclick="showSection('courses')" class="nav-btn">Courses</button></li>
         <li><button onclick="showSection('Contact')" class="nav-btn">Contact Us</button></li>
         <li><button onclick="showSection('about')" class="nav-btn">About Us</button></li>
+        <li><button onclick="showSection('faq')" class="nav-btn">FAQ</button></li>
       </ul>
 
       <button class="mobile-menu" onclick="toggleMobileMenu()" aria-label="Open navigation menu">☰</button>
@@ -31,9 +33,61 @@
       <button onclick="showSection('courses'); toggleMobileMenu()">Courses</button>
       <button onclick="showSection('Contact'); toggleMobileMenu()">Contact Us</button>
       <button onclick="showSection('about'); toggleMobileMenu()">About Us</button>
+      <button onclick="showSection('faq'); toggleMobileMenu()">FAQ</button>
     </div>
   </nav>
   
+  <!-- FAQ Section -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about APlus Learning Institute</p>
+      </div>
+      <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-item" style="background:#f8fafc; margin-bottom:1.2rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1.5rem;">
+          <h4 style="color:#2563eb; margin-bottom:0.5rem;">1. What is APlus Learning Institute?</h4>
+          <p style="color:#374151;">APlus Learning Institute is an online platform offering personalized tutoring and courses in academics, languages, computer science, and competitive exams for students worldwide.</p>
+        </div>
+        <div class="faq-item" style="background:#f8fafc; margin-bottom:1.2rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1.5rem;">
+          <h4 style="color:#2563eb; margin-bottom:0.5rem;">2. How do I book a free demo class?</h4>
+          <p style="color:#374151;">You can book a free 30-minute demo class by filling out the contact form and selecting "Yes" for the demo class option.</p>
+        </div>
+        <div class="faq-item" style="background:#f8fafc; margin-bottom:1.2rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1.5rem;">
+          <h4 style="color:#2563eb; margin-bottom:0.5rem;">3. What boards and curricula do you cover?</h4>
+          <p style="color:#374151;">We cover CBSE, ICSE, State Boards of India, IB, IGCSE, AQA, MYP, A Level, AP, and more.</p>
+        </div>
+        <div class="faq-item" style="background:#f8fafc; margin-bottom:1.2rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1.5rem;">
+          <h4 style="color:#2563eb; margin-bottom:0.5rem;">4. Are your courses available internationally?</h4>
+          <p style="color:#374151;">Yes, our courses are available to students worldwide, and we have learners from India, UAE, USA, UK, Canada, and more.</p>
+        </div>
+        <div class="faq-item" style="background:#f8fafc; margin-bottom:1.2rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1.5rem;">
+          <h4 style="color:#2563eb; margin-bottom:0.5rem;">5. What platforms do you use for online classes?</h4>
+          <p style="color:#374151;">We use Zoom, Google Meet, Microsoft Teams, and WhatsApp for live classes and communication.</p>
+        </div>
+        <div class="faq-item" style="background:#f8fafc; margin-bottom:1.2rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1.5rem;">
+          <h4 style="color:#2563eb; margin-bottom:0.5rem;">6. Who are the instructors?</h4>
+          <p style="color:#374151;">Our instructors are experienced, qualified teachers and professionals from India, specializing in their respective subjects.</p>
+        </div>
+        <div class="faq-item" style="background:#f8fafc; margin-bottom:1.2rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1.5rem;">
+          <h4 style="color:#2563eb; margin-bottom:0.5rem;">7. Can I choose my own schedule?</h4>
+          <p style="color:#374151;">Yes, we offer flexible scheduling to accommodate students in different time zones and with varying availability.</p>
+        </div>
+        <div class="faq-item" style="background:#f8fafc; margin-bottom:1.2rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1.5rem;">
+          <h4 style="color:#2563eb; margin-bottom:0.5rem;">8. How do I pay for the courses?</h4>
+          <p style="color:#374151;">Payment options and details will be shared after registration. We support multiple payment methods for international students.</p>
+        </div>
+        <div class="faq-item" style="background:#f8fafc; margin-bottom:1.2rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1.5rem;">
+          <h4 style="color:#2563eb; margin-bottom:0.5rem;">9. Do you provide study materials?</h4>
+          <p style="color:#374151;">Yes, we provide digital study materials, assignments, quizzes, and resources through Google Classroom and other platforms.</p>
+        </div>
+        <div class="faq-item" style="background:#f8fafc; margin-bottom:1.2rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1.5rem;">
+          <h4 style="color:#2563eb; margin-bottom:0.5rem;">10. How can I contact support?</h4>
+          <p style="color:#374151;">You can reach us via the Contact Us form on this website or email us at <a href="mailto:info@apluslearning.com" style="color:#2563eb;">info@apluslearning.com</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Home Section -->
   <section id="home" class="section active">
@@ -54,14 +108,14 @@
           <div class="feature-card">
             <div class="feature-icon">👨‍🏫</div>
             <h3>Expert Instructors</h3>
-            <p>We cover the Academic Syllabus of the State Boards of India, CBSE Board, ICSE Board, AQA, MYP, A Level, IGCSE, AP.
+            <p>We cover Academic Syllabus of State Boards of India, CBSE Board, ICSE Board, AQA, MYP, A Level IGCSE, AP.
             </p>
           </div>
           
           <div class="feature-card">
             <div class="feature-icon">💬</div>
             <h3>Free Demo Classes</h3>
-            <p>We provide a 30-minute free demo class for each subject.</p>
+            <p>We provide a 30 minute free demo class for each subject.</p>
           </div>
         </div>
       </div>
@@ -171,13 +225,13 @@
             <p style="line-height: 1.8; color: #374151; margin-bottom: 1.5rem;">
               Founded in 2023 and established in 2024, APlus Learning Institute has been at the forefront of online education,
               providing high-quality courses to students worldwide. Our mission is to make quality
-              Education is accessible to everyone, regardless of their location or background.
+              education accessible to everyone, regardless of their location or background.
             </p>
           </div>
           <div style="margin-bottom: 2rem;">
             <h3 style="color: #2563eb; margin-bottom: 1rem; font-size: 1.5rem;">Our Mission</h3>
             <p style="line-height: 1.8; color: #374151; margin-bottom: 1.5rem;">
-              Our mission is to deliver a well-rounded and accessible online learning experience for school students, college learners, and professionals in WORLDWIDE:
+              Our mission is to deliver a well-rounded and accessible online learning experience for school students, college learners, and professionals in Dubai by:
               <br>
               Providing expert-led tutoring in core academic subjects (Math, Science, English, Social Studies) aligned with CBSE, ICSE, British, IB, and American curricula.
               <br>
@@ -215,21 +269,22 @@
   </section>
 
     <section id="courses" class="section">
-        <div class="courses">
-          <div class="container">
-            <div class="section-header">
-              <h2>Our Courses</h2>
-              <p>Choose from our comprehensive selection of courses</p>
-            </div>
+      <div class="courses">
+        <div class="container">
+        <div class="section-header">
+          <h2>Our Courses</h2>
+          <p>Choose from our comprehensive selection of courses</p>
+        </div>
 
-            <!-- Course Categories Navigation -->
-            <div class="course-categories">
-              <button class="btn btn-secondary active" onclick="showCourseCategory('academics')" id="academicsBtn">Academics</button>
-              <button class="btn btn-secondary" onclick="showCourseCategory('languages')" id="languagesBtn">Languages</button>
-              <button class="btn btn-secondary" onclick="showCourseCategory('computer')" id="computerBtn">Computer & AI</button>
-              <button class="btn btn-secondary" onclick="showCourseCategory('Competitive')" id="CompetitiveBtn">Competitive Courses</button>
-            </div>
+        <!-- Course Categories Navigation -->
+        <div class="course-categories">
+          <button class="btn btn-secondary active" onclick="showCourseCategory('academics')" id="academicsBtn">Academics</button>
+          <button class="btn btn-secondary" onclick="showCourseCategory('languages')" id="languagesBtn">Languages</button>
+          <button class="btn btn-secondary" onclick="showCourseCategory('computer')" id="computerBtn">Computer & AI</button>
+          <button class="btn btn-secondary" onclick="showCourseCategory('competitive')" id="competitiveBtn">Competitive Exams</button>
+        </div>
 
+      
             <!-- Academics Courses -->
             <div id="academics" class="course-category active">
               <h3>Academic Subjects</h3>
@@ -372,6 +427,118 @@
                       <span>6th–8th<br><span style="font-size:0.8rem; color:#6b7280;">History, Civics, Geography</span></span>
                       <span>9th–10th<br><span style="font-size:0.8rem; color:#6b7280;">Board Level</span></span>
                       <span>11th–12th<br><span style="font-size:0.8rem; color:#6b7280;">Humanities</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!--competitive-->
+  <!-- Academics Courses -->
+            <div id="competitive" class="course-category active">
+              <h3>Competitive Exams</h3>
+              <div class="subjects-grid">
+                <!-- JEE -->
+                <div class="subject-card clickable-course" data-type="competitive" data-course="JEE" onclick="goToContact('competitive','JEE')">
+                  <div class="subject-header">
+                    <div>
+                      <h4>JEE</h4>
+                      <p>Joint Entrance Examination Preparation</p>
+                    </div>
+                  </div>
+                  <div class="subject-content">
+                    <h5>Subjects:</h5>
+                    <div class="levels-scroll">
+                      <div class="level-badge">
+                        <div class="level-name">Mathematics</div>
+                        <div class="level-desc">JEE Main & Advanced</div>
+                      </div>
+                      <div class="level-badge">
+                        <div class="level-name">Physics</div>
+                        <div class="level-desc">Concepts & Practice</div>
+                      </div>
+                      <div class="level-badge">
+                        <div class="level-name">Chemistry</div>
+                        <div class="level-desc">Physical, Organic, Inorganic</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- NEET -->
+                <div class="subject-card clickable-course" data-type="competitive" data-course="NEET" onclick="goToContact('competitive','NEET')">
+                  <div class="subject-header">
+                    <div>
+                      <h4>NEET</h4>
+                      <p>National Eligibility cum Entrance Test</p>
+                    </div>
+                  </div>
+                  <div class="subject-content">
+                    <h5>Subjects:</h5>
+                    <div class="levels-scroll">
+                      <div class="level-badge">
+                        <div class="level-name">Biology</div>
+                        <div class="level-desc">Botany & Zoology</div>
+                      </div>
+                      <div class="level-badge">
+                        <div class="level-name">Physics</div>
+                        <div class="level-desc">Concepts & Practice</div>
+                      </div>
+                      <div class="level-badge">
+                        <div class="level-name">Chemistry</div>
+                        <div class="level-desc">Physical, Organic, Inorganic</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Private Jobs -->
+                <div class="subject-card clickable-course" data-type="competitive" data-course="Private Jobs" onclick="goToContact('competitive','Private Jobs')">
+                  <div class="subject-header">
+                    <div>
+                      <h4>Private Jobs</h4>
+                      <p>Preparation for private sector job exams</p>
+                    </div>
+                  </div>
+                  <div class="subject-content">
+                    <h5>Subjects:</h5>
+                    <div class="levels-scroll">
+                      <div class="level-badge">
+                        <div class="level-name">English (Public Speaking)</div>
+                        <div class="level-desc">Communication & Presentation Skills</div>
+                      </div>
+                      <div class="level-badge">
+                        <div class="level-name">Aptitude Reasoning</div>
+                        <div class="level-desc">Quantitative & Logical Reasoning</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Government Exams -->
+                <div class="subject-card clickable-course" data-type="competitive" data-course="Government Exams" onclick="goToContact('competitive','Government Exams')">
+                  <div class="subject-header">
+                    <div>
+                      <h4>Government Exams</h4>
+                      <p>Preparation for various government exams</p>
+                    </div>
+                  </div>
+                  <div class="subject-content">
+                    <h5>Subjects:</h5>
+                    <div class="levels-scroll">
+                      <div class="level-badge">
+                        <div class="level-name">Current Affairs</div>
+                        <div class="level-desc">National & International</div>
+                      </div>
+                      <div class="level-badge">
+                        <div class="level-name">Haryana GK</div>
+                        <div class="level-desc">State Specific Knowledge</div>
+                      </div>
+                      <div class="level-badge">
+                        <div class="level-name">Computer Fundamentals</div>
+                        <div class="level-desc">Basics & Applications</div>
+                      </div>
+                      <div class="level-badge">
+                        <div class="level-name">Maths And Aptitude Reasoning</div>
+                        <div class="level-desc">Quantitative & Logical</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -898,18 +1065,111 @@
                         <div class="level-name">Intermediate</div>
                         <div class="level-desc">DOM, ES6</div>
                       </div>
-                      <div class="level-badge">
-                        <div class="level-name">Advanced</div>
-                        <div class="level-desc">React, Node</div>
-                      </div>
-                    </div>
+                  <div class="level-badge">
+                    <div class="level-name">Advanced</div>
+                    <div class="level-desc">React, Node</div>
                   </div>
                 </div>
               </div>
             </div>
+          </div> <!-- End of .subjects-grid for #computer -->
+        </div> <!-- End of #computer .course-category -->
+
+        <!-- Competitive Exams Courses -->
+        <div id="competitive" class="course-category">
+          <h3>Competitive Exams</h3>
+          <div class="subjects-grid">
+          <!-- JEE -->
+          <div class="subject-card clickable-course" data-type="competitive" data-course="JEE" onclick="goToContact('competitive','JEE')">
+            <div class="subject-header">
+            <div>
+              <h4>JEE</h4>
+              <p>Joint Entrance Examination Preparation</p>
+            </div>
+            </div>
+            <div class="subject-content">
+            <h5>Subjects:</h5>
+            <div class="levels-scroll">
+              <div class="level-badge">
+              <div class="level-name">Mathematics</div>
+              <div class="level-desc">JEE Main & Advanced</div>
+              </div>
+              <div class="level-badge">
+              <div class="level-name">Physics</div>
+              <div class="level-desc">Concepts & Practice</div>
+              </div>
+              <div class="level-badge">
+              <div class="level-name">Chemistry</div>
+              <div class="level-desc">Physical, Organic, Inorganic</div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <!-- NEET -->
+          <div class="subject-card clickable-course" data-type="competitive" data-course="NEET" onclick="goToContact('competitive','NEET')">
+            <div class="subject-header">
+            <div>
+              <h4>NEET</h4>
+              <p>National Eligibility cum Entrance Test</p>
+            </div>
+            </div>
+            <div class="subject-content">
+            <h5>Subjects:</h5>
+            <div class="levels-scroll">
+              <div class="level-badge">
+              <div class="level-name">Biology</div>
+              <div class="level-desc">Botany & Zoology</div>
+              </div>
+              <div class="level-badge">
+              <div class="level-name">Physics</div>
+              <div class="level-desc">Concepts & Practice</div>
+              </div>
+              <div class="level-badge">
+              <div class="level-name">Chemistry</div>
+              <div class="level-desc">Physical, Organic, Inorganic</div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <!-- Government Exams -->
+          <div class="subject-card clickable-course" data-type="competitive" data-course="Government Exams" onclick="goToContact('competitive','Government Exams')">
+            <div class="subject-header">
+            <div>
+              <h4>Government Exams</h4>
+              <p>Preparation for various government exams</p>
+            </div>
+            </div>
+            <div class="subject-content">
+            <h5>Subjects:</h5>
+            <div class="levels-scroll">
+              <div class="level-badge">
+              <div class="level-name">Current Affairs</div>
+              <div class="level-desc">National & International</div>
+              </div>
+              <div class="level-badge">
+              <div class="level-name">Haryana GK</div>
+              <div class="level-desc">State Specific Knowledge</div>
+              </div>
+              <div class="level-badge">
+              <div class="level-name">Computer Fundamentals</div>
+              <div class="level-desc">Basics & Applications</div>
+              </div>
+              <div class="level-badge">
+              <div class="level-name">Maths And Aptitude Reasoning</div>
+              <div class="level-desc">Quantitative & Logical</div>
+              </div>
+            </div>
+            </div>
+          </div>
           </div>
         </div>
+
+        </div>
+      </div>
       </section>
+
 
 
   <script>
@@ -937,204 +1197,224 @@
     }
   </script>
 
-<!-- Contact Us Section -->
-<section id="Contact" class="section">
-  <div class="form-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Contact Us Today</h2>
-      </div>
+  <!-- Contact Us Section -->
+  <section id="Contact" class="section">
+    <div class="form-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Us Today</h2>
+        </div>
 
-      <div class="form-container">
-        <form action="https://submit-form.com/IkUFckCIk" method="POST">
-          <!-- Full Name -->
-          <div class="form-group">
-            <label for="regName">Full Name</label>
-            <input type="text" id="regName" name="regName" placeholder="Enter your full name" required>
-          </div>
+        <div class="form-container">
+          <form action="https://submit-form.com/IkUFckCIk" method="POST">
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="regName">Full Name</label>
+              <input type="text" id="regName" name="regName" placeholder="Enter your full name" required>
+            </div>
 
-      <!-- Email -->
-<div class="form-group">
-  <label for="regEmail">Email Address <span style="color:red">*</span></label>
-  <input type="email" id="regEmail" name="regEmail" placeholder="Enter your email" required>
-</div>
-
-<!-- Phone Number with Typable Country Code -->
-<div class="form-group">
-  <label for="phone">Phone Number (Optional)</label>
-  <div style="display: flex; gap: 10px;">
-    <input type="text" id="countryCode" name="countryCode" placeholder="+91"
-           pattern="\+\d{1,4}" title="Enter a valid country code starting with +"
-           style="width: 80px;">
-    <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit phone number"
-           pattern="\d{10}" maxlength="10" title="Phone number should be 10 digits">
+        <!-- Email -->
+  <div class="form-group">
+    <label for="regEmail">Email Address <span style="color:red">*</span></label>
+    <input type="email" id="regEmail" name="regEmail" placeholder="Enter your email" required>
   </div>
-</div>
-
-
-          <!-- Course Type -->
-          <div class="form-group">
-            <label for="courseType">Select type of Course</label>
-            <select id="courseType" name="courseType" required class="custom-select elegant-select" onchange="updateCourseDropdown()">
-              <option value="" disabled selected>Select your course type</option>
-              <option value="academic">Academic</option>
-              <option value="language">Language</option>
-              <option value="computer">Computer and AI</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <!-- Class Dropdown (only for Academics) -->
-          <div class="form-group" id="classDropdownContainer" style="display: none;">
-            <label for="classSelect">Select Class</label>
-            <select id="classSelect" name="classSelect" class="custom-select elegant-select">
-              <option value="" disabled selected>Select your class</option>
-              <option value="1st-5th">1st–5th</option>
-              <option value="6th-8th">6th–8th</option>
-              <option value="9th-10th">9th–10th</option>
-              <option value="11th-12th">11th–12th</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <!-- Course Dropdown (Dynamic) -->
-          <div class="form-group" id="courseDropdownContainer" style="display: none;">
-            <label for="courseSelect">Select Course</label>
-            <select id="courseSelect" name="courseSelect" required class="custom-select elegant-select">
-              <!-- Options will be populated dynamically -->
-            </select>
-          </div>
-
-          <!-- Country -->
-          <div class="form-group">
-            <label for="country">Country</label>
-            <select id="country" name="country" required class="custom-select elegant-select">
-              <option value="" disabled selected>Select your country</option>
-              <option value="india">India</option>
-              <option value="usa">USA</option>
-              <option value="uk">UK</option>
-              <option value="canada">Canada</option>
-              <option value="australia">Australia</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <!-- Board -->
-          <div class="form-group">
-            <label for="board">Select Board</label>
-            <select id="board" name="board" required class="custom-select elegant-select">
-              <option value="" disabled selected>Select your board</option>
-              <option value="cbse">CBSE</option>
-              <option value="icse">ICSE</option>
-              <option value="state">State Board</option>
-              <option value="ib">IB</option>
-              <option value="igcse">IGCSE</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <!-- Demo Class -->
-          <div class="form-group">
-            <label for="demoClass">Demo Class</label>
-            <select id="demoClass" name="demoClass" required class="custom-select elegant-select">
-              <option value="" disabled selected>Select a demo class</option>
-              <option value="yes">Yes, I want a demo class</option>
-              <option value="no">No, I don't need a demo class</option>
-            </select>
-          </div>
-
-          <!-- Submit Button -->
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Done</button>
-        </form>
-      </div>
+  <!-- Phone Number with Typable Country Code -->
+  <div class="form-group">
+    <label for="phone">Phone Number <span style="color:red">*</span></label>
+    <div style="display: flex; gap: 10px;">
+      <input type="text" id="countryCode" name="countryCode" placeholder="+91" required
+             pattern="\+\d{1,4}" title="Enter a valid country code starting with +"
+             style="width: 80px;">
+      <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit phone number"
+             pattern="\d{10}" maxlength="10" title="Phone number should be 10 digits" required>
     </div>
   </div>
-</section>
 
-<!-- JavaScript for dynamic course and class selection -->
-<script>
-  const courseOptions = {
-    academic: [
-      "Mathematics",
-      "Science",
-      "Chemistry",
-      "Physics",
-      "Biology",
-      "Computer",
-      "English",
-      "Social Studies (Indian)"
-    ],
-    language: [
-      "English",
-      "Hindi",
-      "Punjabi",
-      "Sanskrit",
-      "German",
-      "Japanese",
-      "French"
-    ],
-    computer: [
-      "Python Programming",
-      "C++ Programming",
-      "Full Stack Development",
-      "Google Arcade",
-      "C Programming Basics",
-      "Data Structures & Algorithms (C)",
-      "DBMS",
-      "PHP",
-      "HTML & JavaScript",
-      "Computer Graphics",
-      "Java Programming"
-    ],
-    other: [
-      "Other"
-    ]
-  };
 
-  function updateCourseDropdown() {
-    const type = document.getElementById('courseType').value;
-    const container = document.getElementById('courseDropdownContainer');
-    const select = document.getElementById('courseSelect');
-    const classContainer = document.getElementById('classDropdownContainer');
-    const classSelect = document.getElementById('classSelect');
+            <!-- Course Type -->
+            <div class="form-group">
+              <label for="courseType">Select type of Course</label>
+              <select id="courseType" name="courseType" required class="custom-select elegant-select" onchange="updateCourseDropdown()">
+                <option value="" disabled selected>Select your course type</option>
+                <option value="academic">Academic</option>
+                <option value="language">Language</option>
+                <option value="computer">Computer and AI</option>
+                <option value="competitive">Competitive Programming</option>
+                <option value="privatejobs">Private Jobs</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
 
-    // Show/hide class dropdown for Academics
-    if (type === 'academic') {
-      classContainer.style.display = 'block';
-      classSelect.required = true;
-    } else {
-      classContainer.style.display = 'none';
-      classSelect.required = false;
-      classSelect.selectedIndex = 0;
+            <!-- Class Dropdown (only for Academics) -->
+            <div class="form-group" id="classDropdownContainer" style="display: none;">
+              <label for="classSelect">Select Class</label>
+              <select id="classSelect" name="classSelect" class="custom-select elegant-select">
+                <option value="" disabled selected>Select your class</option>
+                <option value="1st-5th">1st–5th</option>
+                <option value="6th-8th">6th–8th</option>
+                <option value="9th-10th">9th–10th</option>
+                <option value="11th-12th">11th–12th</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Course Dropdown (Dynamic) -->
+            <div class="form-group" id="courseDropdownContainer" style="display: none;">
+              <label for="courseSelect">Select Course</label>
+              <select id="courseSelect" name="courseSelect" required class="custom-select elegant-select">
+                <!-- Options will be populated dynamically -->
+              </select>
+            </div>
+
+            <!-- Country -->
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country" name="country" required class="custom-select elegant-select">
+                <option value="" disabled selected>Select your country</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Board -->
+            <div class="form-group">
+              <label for="board">Select Board</label>
+              <select id="board" name="board" required class="custom-select elegant-select">
+                <option value="" disabled selected>Select your board</option>
+                <option value="cbse">CBSE</option>
+                <option value="icse">ICSE</option>
+                <option value="state">State Board</option>
+                <option value="ib">IB</option>
+                <option value="igcse">IGCSE</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Demo Class -->
+            <div class="form-group">
+              <label for="demoClass">Demo Class</label>
+              <select id="demoClass" name="demoClass" required class="custom-select elegant-select">
+                <option value="" disabled selected>Select a demo class</option>
+                <option value="yes">Yes, I want a demo class</option>
+                <option value="no">No, I don't need a demo class</option>
+              </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Done</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript for dynamic course and class selection -->
+  <script>
+    const courseOptions = {
+      academic: [
+        "Mathematics",
+        "Science",
+        "Chemistry",
+        "Physics",
+        "Biology",
+        "Computer",
+        "English",
+        "Social Studies (Indian)"
+      ],
+      language: [
+        "English",
+        "Hindi",
+        "Punjabi",
+        "Sanskrit",
+        "German",
+        "Japanese",
+        "French"
+      ],
+      computer: [
+        "Python Programming",
+        "C++ Programming",
+        "Full Stack Development",
+        "Google Arcade",
+        "C Programming Basics",
+        "Data Structures & Algorithms (C)",
+        "DBMS",
+        "PHP",
+        "HTML & JavaScript",
+        "Computer Graphics",
+        "Java Programming"
+      ],
+      competitive: [
+        "JEE (Mathematics)",
+        "JEE (Physics)",
+        "JEE (Chemistry)",
+        "NEET (Biology)",
+        "NEET (Physics)",
+        "NEET (Chemistry)",
+        "Government Exams (Current Affairs)",
+        "Government Exams (Haryana GK)",
+        "Government Exams (Computer Fundamentals)",
+        "Government Exams (Maths And Aptitude Reasoning)",
+        "Competitive Programming (Data Structures & Algorithms)",
+        "Competitive Programming (Problem Solving)",
+        "Competitive Programming (Codeforces/Leetcode/Atcoder)",
+        "Competitive Programming (Contests & Interview Prep)"
+      ],
+      privatejobs: [
+        "English (Public Speaking)",
+        "Aptitude Reasoning"
+      ],
+      other: [
+        "Other"
+      ]
+    };
+
+    function updateCourseDropdown() {
+      const type = document.getElementById('courseType').value;
+      const container = document.getElementById('courseDropdownContainer');
+      const select = document.getElementById('courseSelect');
+      const classContainer = document.getElementById('classDropdownContainer');
+      const classSelect = document.getElementById('classSelect');
+
+      // Show/hide class dropdown for Academics
+      if (type === 'academic') {
+        classContainer.style.display = 'block';
+        classSelect.required = true;
+      } else {
+        classContainer.style.display = 'none';
+        classSelect.required = false;
+        classSelect.selectedIndex = 0;
+      }
+
+      // Handle course dropdown
+      if (type && courseOptions[type]) {
+        container.style.display = 'block';
+        select.innerHTML = '';
+
+        const placeholder = document.createElement('option');
+        placeholder.value = '';
+        placeholder.disabled = true;
+        placeholder.selected = true;
+        placeholder.textContent = 'Select your course';
+        select.appendChild(placeholder);
+
+        courseOptions[type].forEach(course => {
+          const opt = document.createElement('option');
+          opt.value = course;
+          opt.textContent = course;
+          select.appendChild(opt);
+        });
+
+        select.required = true;
+      } else {
+        container.style.display = 'none';
+        select.required = false;
+      }
     }
-
-    // Handle course dropdown
-    if (type && courseOptions[type]) {
-      container.style.display = 'block';
-      select.innerHTML = '';
-
-      const placeholder = document.createElement('option');
-      placeholder.value = '';
-      placeholder.disabled = true;
-      placeholder.selected = true;
-      placeholder.textContent = 'Select your course';
-      select.appendChild(placeholder);
-
-      courseOptions[type].forEach(course => {
-        const opt = document.createElement('option');
-        opt.value = course;
-        opt.textContent = course;
-        select.appendChild(opt);
-      });
-
-      select.required = true;
-    } else {
-      container.style.display = 'none';
-      select.required = false;
-    }
-  }
-</script>
-
+  </script>
 
   <style>
   /* Elegant and bigger select dropdowns */
