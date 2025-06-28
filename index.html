@@ -33,12 +33,12 @@
       <button onclick="showSection('courses'); toggleMobileMenu()">Courses</button>
       <button onclick="showSection('Contact'); toggleMobileMenu()">Contact Us</button>
       <button onclick="showSection('about'); toggleMobileMenu()">About Us</button>
-      <button onclick="showSection(''); toggleMobileMenu()"></button>
+      <button onclick="showSection('faq'); toggleMobileMenu()">FAQ</button>
     </div>
   </nav>
   
-  <!--  Section -->
-  <section id="" class="section">
+  <!-- FAQ Section -->
+  <section id="faq" class="section">
     <div class="container">
       <div class="section-header">
         <h2>Frequently Asked Questions</h2>
@@ -286,7 +286,7 @@
 
       
             <!-- Academics Courses -->
-            <div id="academics" class="course-category active">
+            <div id="academics" class="course-category" style="display: block;">
               <h3>Academic Subjects</h3>
               <div class="subjects-grid">
                 <!-- Mathematics -->
@@ -432,121 +432,9 @@
                 </div>
               </div>
             </div>
-        <!--competitive-->
-            <!-- Academics Courses -->
-                <div id="competitive" class="course-category active">
-                  <h3>Competitive Exams</h3>
-                <div class="subjects-grid">
-                <!-- JEE -->
-                  <div class="subject-card clickable-course" data-type="competitive" data-course="JEE" onclick="goToContact('competitive','JEE')">
-                  <div class="subject-header">
-                    <div>
-                      <h4>JEE</h4>
-                      <p>Joint Entrance Examination Preparation</p>
-                    </div>
-                  </div>
-                  <div class="subject-content">
-                    <h5>Subjects:</h5>
-                    <div class="levels-scroll">
-                      <div class="level-badge">
-                        <div class="level-name">Mathematics</div>
-                        <div class="level-desc">JEE Main & Advanced</div>
-                      </div>
-                      <div class="level-badge">
-                        <div class="level-name">Physics</div>
-                        <div class="level-desc">Concepts & Practice</div>
-                      </div>
-                      <div class="level-badge">
-                        <div class="level-name">Chemistry</div>
-                        <div class="level-desc">Physical, Organic, Inorganic</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- NEET -->
-                <div class="subject-card clickable-course" data-type="competitive" data-course="NEET" onclick="goToContact('competitive','NEET')">
-                  <div class="subject-header">
-                    <div>
-                      <h4>NEET</h4>
-                      <p>National Eligibility cum Entrance Test</p>
-                    </div>
-                  </div>
-                  <div class="subject-content">
-                    <h5>Subjects:</h5>
-                    <div class="levels-scroll">
-                      <div class="level-badge">
-                        <div class="level-name">Biology</div>
-                        <div class="level-desc">Botany & Zoology</div>
-                      </div>
-                      <div class="level-badge">
-                        <div class="level-name">Physics</div>
-                        <div class="level-desc">Concepts & Practice</div>
-                      </div>
-                      <div class="level-badge">
-                        <div class="level-name">Chemistry</div>
-                        <div class="level-desc">Physical, Organic, Inorganic</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Private Jobs -->
-                <div class="subject-card clickable-course" data-type="competitive" data-course="Private Jobs" onclick="goToContact('competitive','Private Jobs')">
-                  <div class="subject-header">
-                    <div>
-                      <h4>Private Jobs</h4>
-                      <p>Preparation for private sector job exams</p>
-                    </div>
-                  </div>
-                  <div class="subject-content">
-                    <h5>Subjects:</h5>
-                    <div class="levels-scroll">
-                      <div class="level-badge">
-                        <div class="level-name">English (Public Speaking)</div>
-                        <div class="level-desc">Communication & Presentation Skills</div>
-                      </div>
-                      <div class="level-badge">
-                        <div class="level-name">Aptitude Reasoning</div>
-                        <div class="level-desc">Quantitative & Logical Reasoning</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Government Exams -->
-                <div class="subject-card clickable-course" data-type="competitive" data-course="Government Exams" onclick="goToContact('competitive','Government Exams')">
-                  <div class="subject-header">
-                    <div>
-                      <h4>Government Exams</h4>
-                      <p>Preparation for various government exams</p>
-                    </div>
-                  </div>
-                  <div class="subject-content">
-                    <h5>Subjects:</h5>
-                    <div class="levels-scroll">
-                      <div class="level-badge">
-                        <div class="level-name">Current Affairs</div>
-                        <div class="level-desc">National & International</div>
-                      </div>
-                      <div class="level-badge">
-                        <div class="level-name">Haryana GK</div>
-                        <div class="level-desc">State Specific Knowledge</div>
-                      </div>
-                      <div class="level-badge">
-                        <div class="level-name">Computer Fundamentals</div>
-                        <div class="level-desc">Basics & Applications</div>
-                      </div>
-                      <div class="level-badge">
-                        <div class="level-name">Maths And Aptitude Reasoning</div>
-                        <div class="level-desc">Quantitative & Logical</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+       
             <!-- Language Courses -->
-            <div id="languages" class="course-category">
+            <div id="languages" class="course-category" style="display: none;">
             <h3>Language Courses</h3>
             <div class="subjects-grid">
               <!-- English -->
@@ -762,7 +650,7 @@
             </div>
 
             <!-- Computer & AI Courses -->
-            <div id="computer" class="course-category">
+            <div id="computer" class="course-category" style="display: none;">
               <h3>Computer & AI Courses</h3>
               <div class="subjects-grid">
                 <!-- Python -->
@@ -1076,7 +964,7 @@
         </div> <!-- End of #computer .course-category -->
 
         <!-- Competitive Exams Courses -->
-        <div id="competitive" class="course-category">
+        <div id="competitive" class="course-category" style="display: none;">
           <h3>Competitive Exams</h3>
           <div class="subjects-grid">
           <!-- JEE -->
@@ -1542,7 +1430,7 @@
     }
 
     function showCourseCategory(category) {
-      const categories = ['academics', 'languages', 'computer'];
+      const categories = ['academics', 'languages', 'computer', 'competitive'];
 
       // Show only the selected category, hide the others
       categories.forEach(cat => {
