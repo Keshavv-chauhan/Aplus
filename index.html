@@ -44,6 +44,13 @@
         <h2>Frequently Asked Questions</h2>
         <p>Find answers to common questions about APlus Learning Institute</p>
       </div>
+      <!-- FAQ Video -->
+      <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
+        <video width="480" height="270" controls style="border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.10); max-width: 100%;">
+          <source src="faq.MP4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div class="-list" style="max-width: 800px; margin: 0 auto;">
         <div class="-item" style="background:#f8fafc; margin-bottom:1.2rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1.5rem;">
           <h4 style="color:#2563eb; margin-bottom:0.5rem;">1. What is APlus Learning Institute?</h4>
@@ -1085,120 +1092,197 @@
     }
   </script>
 
-  <!-- Contact Us Section -->
-  <section id="Contact" class="section">
-    <div class="form-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Contact Us Today</h2>
-        </div>
+    <!-- Contact Us Section -->
+    <section id="Contact" class="section">
+      <div class="form-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact Us Today</h2>
+          </div>
 
-        <div class="form-container">
-          <form action="https://submit-form.com/IkUFckCIk" method="POST">
-            <!-- Full Name -->
-            <div class="form-group">
-              <label for="regName">Full Name</label>
-              <input type="text" id="regName" name="regName" placeholder="Enter your full name" required>
-            </div>
+          <div class="form-container">
+            <form action="https://submit-form.com/IkUFckCIk" method="POST">
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="regName">Full Name</label>
+                <input type="text" id="regName" name="regName" placeholder="Enter your full name" required>
+              </div>
 
-        <!-- Email -->
-  <div class="form-group">
-    <label for="regEmail">Email Address <span style="color:red">*</span></label>
-    <input type="email" id="regEmail" name="regEmail" placeholder="Enter your email" required>
-  </div>
-  <!-- Phone Number with Typable Country Code -->
-  <div class="form-group">
-    <label for="phone">Phone Number <span style="color:red">*</span></label>
-    <div style="display: flex; gap: 10px;">
-      <input type="text" id="countryCode" name="countryCode" placeholder="+91" required
-             pattern="\+\d{1,4}" title="Enter a valid country code starting with +"
-             style="width: 80px;">
-      <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit phone number"
-             pattern="\d{10}" maxlength="10" title="Phone number should be 10 digits" required>
+          <!-- Email -->
+    <div class="form-group">
+      <label for="regEmail">Email Address <span style="color:red">*</span></label>
+      <input type="email" id="regEmail" name="regEmail" placeholder="Enter your email" required>
     </div>
-  </div>
-
-
-            <!-- Course Type -->
-            <div class="form-group">
-              <label for="courseType">Select type of Course</label>
-              <select id="courseType" name="courseType" required class="custom-select elegant-select" onchange="updateCourseDropdown()">
-                <option value="" disabled selected>Select your course type</option>
-                <option value="academic">Academic</option>
-                <option value="language">Language</option>
-                <option value="computer">Computer and AI</option>
-                <option value="competitive">Competitive Programming</option>
-                <option value="privatejobs">Private Jobs</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <!-- Class Dropdown (only for Academics) -->
-            <div class="form-group" id="classDropdownContainer" style="display: none;">
-              <label for="classSelect">Select Class</label>
-              <select id="classSelect" name="classSelect" class="custom-select elegant-select">
-                <option value="" disabled selected>Select your class</option>
-                <option value="1st-5th">1st–5th</option>
-                <option value="6th-8th">6th–8th</option>
-                <option value="9th-10th">9th–10th</option>
-                <option value="11th-12th">11th–12th</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <!-- Course Dropdown (Dynamic) -->
-            <div class="form-group" id="courseDropdownContainer" style="display: none;">
-              <label for="courseSelect">Select Course</label>
-              <select id="courseSelect" name="courseSelect" required class="custom-select elegant-select">
-                <!-- Options will be populated dynamically -->
-              </select>
-            </div>
-
-            <!-- Country -->
-            <div class="form-group">
-              <label for="country">Country</label>
-              <select id="country" name="country" required class="custom-select elegant-select">
-                <option value="" disabled selected>Select your country</option>
-                <option value="india">India</option>
-                <option value="usa">USA</option>
-                <option value="uk">UK</option>
-                <option value="canada">Canada</option>
-                <option value="australia">Australia</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <!-- Board -->
-            <div class="form-group">
-              <label for="board">Select Board</label>
-              <select id="board" name="board" required class="custom-select elegant-select">
-                <option value="" disabled selected>Select your board</option>
-                <option value="cbse">CBSE</option>
-                <option value="icse">ICSE</option>
-                <option value="state">State Board</option>
-                <option value="ib">IB</option>
-                <option value="igcse">IGCSE</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <!-- Demo Class -->
-            <div class="form-group">
-              <label for="demoClass">Demo Class</label>
-              <select id="demoClass" name="demoClass" required class="custom-select elegant-select">
-                <option value="" disabled selected>Select a demo class</option>
-                <option value="yes">Yes, I want a demo class</option>
-                <option value="no">No, I don't need a demo class</option>
-              </select>
-            </div>
-
-            <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Done</button>
-          </form>
-        </div>
+    <!-- Phone Number with Typable Country Code -->
+    <div class="form-group">
+      <label for="phone">Phone Number <span style="color:red">*</span></label>
+      <div style="display: flex; gap: 10px;">
+        <input type="text" id="countryCode" name="countryCode" placeholder="+91" required
+               pattern="\+\d{1,4}" title="Enter a valid country code starting with +"
+               style="width: 80px;">
+        <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit phone number"
+               pattern="\d{10}" maxlength="10" title="Phone number should be 10 digits" required>
       </div>
     </div>
-  </section>
+
+
+              <!-- Course Type -->
+              <div class="form-group">
+                <label for="courseType">Select type of Course</label>
+                <select id="courseType" name="courseType" required class="custom-select elegant-select" onchange="updateCourseDropdown()">
+                  <option value="" disabled selected>Select your course type</option>
+                  <option value="academic">Academic</option>
+                  <option value="language">Language</option>
+                  <option value="computer">Computer and AI</option>
+                  <option value="competitive">Competitive Programming</option>
+                  <option value="privatejobs">Private Jobs</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Class Dropdown (only for Academics) -->
+              <div class="form-group" id="classDropdownContainer" style="display: none;">
+                <label for="classSelect">Select Class</label>
+                <select id="classSelect" name="classSelect" class="custom-select elegant-select">
+                  <option value="" disabled selected>Select your class</option>
+                  <option value="1st-5th">1st–5th</option>
+                  <option value="6th-8th">6th–8th</option>
+                  <option value="9th-10th">9th–10th</option>
+                  <option value="11th-12th">11th–12th</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Course Dropdown (Dynamic) -->
+              <div class="form-group" id="courseDropdownContainer" style="display: none;">
+                <label for="courseSelect">Select Course</label>
+                <select id="courseSelect" name="courseSelect" required class="custom-select elegant-select" onchange="toggleOtherCourseInput()">
+                  <!-- Options will be populated dynamically -->
+                </select>
+              </div>
+
+              <!-- Other Course Textbox (hidden by default) -->
+              <div class="form-group" id="otherCourseContainer" style="display: none;">
+                <label for="otherCourseInput">Please specify your subject</label>
+                <input type="text" id="otherCourseInput" name="otherCourseInput" placeholder="Enter subject name">
+              </div>
+
+              <!-- Country -->
+              <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required class="custom-select elegant-select">
+                  <option value="" disabled selected>Select your country</option>
+                  <option value="india">India</option>
+                  <option value="usa">USA</option>
+                  <option value="uk">UK</option>
+                  <option value="canada">Canada</option>
+                  <option value="australia">Australia</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Board -->
+              <div class="form-group">
+                <label for="board">Select Board</label>
+                <select id="board" name="board" required class="custom-select elegant-select">
+                  <option value="" disabled selected>Select your board</option>
+                  <option value="cbse">CBSE</option>
+                  <option value="icse">ICSE</option>
+                  <option value="state">State Board</option>
+                  <option value="ib">IB</option>
+                  <option value="igcse">IGCSE</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Demo Class -->
+              <div class="form-group">
+                <label for="demoClass">Demo Class</label>
+                <select id="demoClass" name="demoClass" required class="custom-select elegant-select">
+                  <option value="" disabled selected>Select a demo class</option>
+                  <option value="yes">Yes, I want a demo class</option>
+                  <option value="no">No, I don't need a demo class</option>
+                </select>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Done</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Show/hide the "Other" subject textbox based on course selection
+      function toggleOtherCourseInput() {
+        var courseSelect = document.getElementById('courseSelect');
+        var otherContainer = document.getElementById('otherCourseContainer');
+        var otherInput = document.getElementById('otherCourseInput');
+        if (courseSelect && courseSelect.value === 'Other') {
+          otherContainer.style.display = 'block';
+          otherInput.required = true;
+        } else {
+          otherContainer.style.display = 'none';
+          otherInput.required = false;
+          otherInput.value = '';
+        }
+      }
+      // Also call toggleOtherCourseInput when course dropdown is updated
+      function updateCourseDropdown() {
+        // original code
+        const type = document.getElementById('courseType').value;
+        const container = document.getElementById('courseDropdownContainer');
+        const select = document.getElementById('courseSelect');
+        const classContainer = document.getElementById('classDropdownContainer');
+        const classSelect = document.getElementById('classSelect');
+
+        // Show/hide class dropdown for Academics
+        if (type === 'academic') {
+          classContainer.style.display = 'block';
+          classSelect.required = true;
+        } else {
+          classContainer.style.display = 'none';
+          classSelect.required = false;
+          classSelect.selectedIndex = 0;
+        }
+
+        // Handle course dropdown
+        if (type && courseOptions[type]) {
+          container.style.display = 'block';
+          select.innerHTML = '';
+
+          const placeholder = document.createElement('option');
+          placeholder.value = '';
+          placeholder.disabled = true;
+          placeholder.selected = true;
+          placeholder.textContent = 'Select your course';
+          select.appendChild(placeholder);
+
+          courseOptions[type].forEach(course => {
+            const opt = document.createElement('option');
+            opt.value = course;
+            opt.textContent = course;
+            select.appendChild(opt);
+          });
+
+          // Always add "Other" option at the end if not already present
+          if (!courseOptions[type].includes('Other')) {
+            const opt = document.createElement('option');
+            opt.value = 'Other';
+            opt.textContent = 'Other';
+            select.appendChild(opt);
+          }
+
+          select.required = true;
+        } else {
+          container.style.display = 'none';
+          select.required = false;
+        }
+        // Hide the "Other" textbox when changing course type
+        toggleOtherCourseInput();
+      }
+    </script>
 
   <!-- JavaScript for dynamic course and class selection -->
   <script>
